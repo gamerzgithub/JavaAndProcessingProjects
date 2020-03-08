@@ -1,33 +1,15 @@
-
-
-//Question 1
-//PRIMITIVE OBJECT VARIABLES
-//PShape object declared to draw the primitive object
 PShape primitiveObj;
-//Variable for primitive object parameter
+
 float objParameters;
-//Question 2
-//Variables for rotation direction and speed of primitive object
 float rx1, ry1; 
 int SpeedX1, SpeedY1;
-/*Variables to track position of the primitive object so that object 
- rotates in a more realistic and smoother fashion*/
 float posX1, posY1;
 
-//Question 1
-//COMPLEX OBJECT VARIABLES
-//PShape object declared to draw the more complex object
 PShape complexObj;
-//Question 2
-//Variables for rotation direction and speed of the complex object
 float rx2, ry2;
 int SpeedX2, SpeedY2;
-/*Variables track position of the complex object so that object 
- rotates in a more realistic and smoother fashion*/
 float posX2, posY2;
 
-//Question 2
-//Importing ControlP5 library
 import controlP5.*;
 ControlP5 conP5;
 CheckBox checkboxPrimitiveObj;
@@ -35,28 +17,18 @@ CheckBox checkboxComplexObj;
 Button gouraud;
 Button phong;
 
-//Question 3
-//Add PeasyCam for camera navigation
 import peasy.*;
 PeasyCam cam;
 
-//Question 3
-//PShader
-//Used for displaying Phong or Gouraud Shading
 PShader shader;
 String s;
-
 
 void setup() {
   size(1000, 600, P3D);
   smooth();
       
-  //Question 1
-  //Instantiate Primitive Object and its variables
   objParameters = 100;
   primitiveObj = createShape(SPHERE, objParameters);
-  //Question 2
-  //Instantiate parameters of object for rotation
   rx1 = 0;     
   ry1 = 0;     
   SpeedX1 = 1; 
@@ -64,11 +36,7 @@ void setup() {
   posX1 = 0;   
   posY1 = 0;  
 
-  //Question 1
-  //Instantiate the Complex Object and its variables
   complexObj = loadShape("minicooper.obj");
-  //Question 2
-  //Instantiate parameters of object for rotation
   rx2 = 0;     
   ry2 = 0;     
   SpeedX2 = 1; 
@@ -76,16 +44,11 @@ void setup() {
   posX2 = 0;   
   posY2 = 0;  
 
-  //Question 2
-  //Instantiation of GUI
-  //Create font for GUI labels
   PFont pfont = createFont("Arial Narrow", 15, true);
 
-  //Instantiate ControlP5
   conP5 = new ControlP5(this);
   conP5.setAutoDraw(false);
 
-  //Instantiate Checkbox for rotation direction of Primitive Object
   checkboxPrimitiveObj = conP5.addCheckBox("Rotation of Primitive Object")
     .setPosition(100, 400)
     .setSize(50, 50)
@@ -95,7 +58,7 @@ void setup() {
     .addItem("Rotate Y1", 1)
     .setFont(pfont)
     ;
-  //Instantiate Checkbox for rotation direction of Complex Object
+
   checkboxComplexObj = conP5.addCheckBox("Rotation of Complex Object")
     .setPosition(600, 400)
     .setSize(50, 50)
@@ -105,9 +68,7 @@ void setup() {
     .addItem("Rotate Y2", 4)
     .setFont(pfont)
     ;
-  /*Instantiate Slider to control the rotation speed of Primitive 
-   Object
-   */
+  
   conP5.addSlider("SpeedX1")
     .setPosition(100, 460)
     .setRange(-20, 20)
@@ -139,17 +100,12 @@ void setup() {
     .toUpperCase(false)
     ;
     
-  //Question 3
-  //Instantiate PeasyCam
   cam = new PeasyCam(this, width/2, height/2, 0, 520);
   cam.setMaximumDistance(5000);
   
-  //Instantiate Shader
   shader = loadShader("gouraud_shading_frag.glsl", "gouraud_shading_vert.glsl");
   s = "Choose Shader";
 
-  //Question 3
-  //Instantiate buttons for shader
   gouraud = new Button(conP5, "gouraud");
   gouraud.setValue(0)
     .setCaptionLabel("Gouraud Shader")
@@ -175,11 +131,9 @@ void setup() {
 void draw() {
   background(0);
   
-  //Question 3
   //Implement point light
   pointLight(200, 200, 200, mouseX, mouseY, 400);
 
-  //Question 3
   //Map shader to buttons 
   if (gouraud.isPressed()) {
     shader = loadShader("gouraud_shading_frag.glsl", "gouraud_shading_vert.glsl");
@@ -187,7 +141,6 @@ void draw() {
     shader = loadShader("phong_shading_frag.glsl", "phong_shading_vert.glsl");
   }
 
-  //Question 1
   //Drawing primitive object
   pushMatrix();
   primitiveObj.setStroke(0);
@@ -213,7 +166,6 @@ void draw() {
   shape(primitiveObj);
   popMatrix();
 
-  //Question 1
   //Drawing Complex Object
   pushMatrix();
   complexObj.setFill(color(255));
@@ -240,12 +192,9 @@ void draw() {
   shape(complexObj);
   popMatrix();
 
-  //Question 3
   //Apply Shader
   shader(shader);
 
-  //Question 2
-  //Draw GUI controls manually
   gui();
 }
 
