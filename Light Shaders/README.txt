@@ -3,8 +3,6 @@ CO3355 Advanced Graphics and Animation
 Coursework 1
 
 Name: Wong Dan Ning
-UOL SRN: 170282246
-
 
 Thank you for reading the README.txt file.
 Instructions for Running the files
