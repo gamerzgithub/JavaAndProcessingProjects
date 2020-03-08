@@ -1,3 +1,8 @@
+/*THE PEACE SIGN
+ *A very simple sketch created with Processing.
+ *Processing project created for BSc Creative Computing year 1 coursework assignment 1.
+ *Project created with the concept of Randomness.
+ */
 /*Variable midPoint is used again for the left and right 
  *slanted lines.
  */
