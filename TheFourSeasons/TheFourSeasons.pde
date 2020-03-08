@@ -1,11 +1,9 @@
-//CO1112 CW2
-//NAME: WONG DAN NING
-//Part 5
-//Below is the extended version of the 
-//'Lsystem sketch' given in the question, 
-//for Part 1, 2 and 3.
-//Unused codes and other question instructions 
-//are commented out or deleted.
+/*THE FOUR SEASONS
+ *Processing project created with object-oriented programming, made for BSc Creative Computing year 1 coursework assignment 2.
+ *Project was created using the concept of L-systems and colour schemes for four seasons.
+ *Unused codes and other question instructions 
+ *are commented out or deleted.
+ */
 
 //Declare objects as global variables
 ArrayList<Tree> trees;
