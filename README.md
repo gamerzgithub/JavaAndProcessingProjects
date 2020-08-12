@@ -1,5 +1,5 @@
 # Processing Projects
-Projects created for my coursework assignments for the BSc Creative Computing degree courses.
+Projects created for my coursework assignments for the BSc Creative Computing degree courses. The pde files are runnable using the Processing IDE available to be downloaded at https://processing.org/download/.
 # Year 1 Projects
 Projects are simple processing sketches using simple vertex structure and HSB colour schemes.
 # Year 2 Project
