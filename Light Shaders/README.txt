@@ -7,7 +7,7 @@ Name: Wong Dan Ning
 Thank you for reading the README.txt file.
 Instructions for Running the files
 ------------------------------------------------------------
-PART A
+PART A: The Phong and Gouraud Shading Model
 1. Move your mouse around to navigate the point light from different directions and positions.
 
 2. To rotate the objects about its original position, simply click the check boxes 'Rotate X1', 'Rotate Y1', 'Rotate X2', 'Rotate Y2'. Make sure the speed of rotation is set to a non-zero value, else the object will not rotate.
@@ -25,7 +25,7 @@ PART A
 8. To choose what shader to apply, click on the buttons of the shader you wish to apply. The default shader applied is Gouraud Shader.
 
 ------------------------------------------------------------
-PART B
+PART B: Phong and Gouraud Shading Model in addition to light cutoff angle and concetration variation
 1. To choose what shader to apply, click on the buttons of the shader you wish to apply. The default shader applied is Gouraud Shader. 
 
 2. Click on Spotlight switch to turn on/off of the spotlight effect.
@@ -45,7 +45,7 @@ PART B
 8. Double left click on the sketch to return the camera to its original position.
 
 -------------------------------------------------------------
-PART C: Material modelled - Copper, Cyan Rubber, Pearl
+PART C: Phong modelling with Materials - Copper, Cyan Rubber, Pearl
 1. To choose what material to apply, click on the buttons of the material you wish to apply. The default material applied is Copper. 
 
 2. Press 'c' to activate camera navigation, press 'v' to decativate camera activation.
