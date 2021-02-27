@@ -1,5 +1,5 @@
 //Name    : Wong Dan Ning //<>//
-//UOL SRN : 170282246
+//UOL SRN : 17*****46
 //Part A
 /*
  BEFORE YOU START:
@@ -158,8 +158,8 @@ void setup() {
 
 
   //Display instructions
-  String studentInfo = "Name\t\t: Wong Dan Ning\n" + "UOL SRN\t: 170282246\n";
-  instructions = "Press UP arrow key to decrease level, press DOWN arrow key to increase level.\n";
+  String studentInfo = "Name\t\t: Wong Dan Ning\n" + "UOL SRN\t: 17*****46\n";
+  instructions = "Press UP arrow key to increase level, press DOWN arrow key to decrease level.\n";
   instructions += "Alternatively, press '1' to '9' for the corresponding level value, press '0' for level 10.\n";
   instructions += "Press 'x' to deactivate camera navigation, 'c' to activate camera navigation. Drag the mouse cursor to rotate the view angle.";
   instructions += "\nUse the mouse wheel to zoom in or out. Double click on the mouse to return the sketch to original position.";
