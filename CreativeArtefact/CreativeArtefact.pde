@@ -1,14 +1,11 @@
-//Name    : Wong Dan Ning //<>//
-//UOL SRN : 170282246
+//Name    : Wong Dan Ning 
+//UOL SRN : 17*****46
 //Part C, extended from Part A and B.
 /*
 BEFORE YOU START:
  Please ensure the PeasyCam, Minim library and ControlP5 libraries are installed 
  in Processing before running the sketch. Please ensure the computer is running 
  at high performance mode to prevent runtime exception. 
- 
- NOTE: 
- The sketch is done in Processing version 3.5.4.
  
  REFERENCE:
  http://www.sojamo.de/libraries/controlP5/
@@ -242,7 +239,6 @@ void draw() {
 
   pushMatrix();
   translate(width/2, height/2);
-  cameraNavigation();
   rotation();
   scale(100);
   shape(shape);
@@ -369,6 +365,22 @@ void keyPressed() {
     println("number of vertices: " + (12+10*(pow(4, lvl-1) - 1)));
     println("frame rate: " + frameRate);
     println("frame time: " + 1/frameRate+ "\n");
+    break;
+  case 'x':
+    cam.setActive(false);
+    println("Camera Off");
+    break;
+  case 'X':
+    cam.setActive(false);
+    println("Camera Off");
+    break;
+  case 'c':
+    cam.setActive(true);
+    println("Camera On");
+    break;
+  case 'C':
+    cam.setActive(true);
+    println("Camera On");
     break;
   }
   shape = createIcosahedron(lvl);
@@ -513,15 +525,4 @@ void animate() {
   }
   animation = frame;
   shader.set("animation", animation);
-}
-
-//Camera navigation
-void cameraNavigation() {
-  if (key == 'c' || key == 'C') {
-    cam.setActive(true);
-    println("Camera On");
-  } else if (key == 'x' || key =='X') {
-    cam.setActive(false);
-    println("Camera Off");
-  }
 }
