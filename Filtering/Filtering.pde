@@ -133,7 +133,7 @@ void setup()
 //To display the commands for the sketch.
 void displayInfo() {
   println("Done by: Wong Dan Ning");
-  println("UOL SRN: 170282246\n");
+  println("UOL SRN: 17*****46\n");
   println("-------------------Commands-------------------");
   println("BACKSPACE\t: Restart");
   println("ENTER\t\t: Mute or Unmute");
