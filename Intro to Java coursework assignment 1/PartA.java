@@ -1,5 +1,5 @@
 /*Name: Wong Dan Ning
- *UOL Student number: 170282246
+ *UOL Student number: 17*****46
  */
 
 import java.util.Random;
