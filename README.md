@@ -1,6 +1,6 @@
 # Processing Projects
 Projects created for my coursework assignments for the BSc Creative Computing degree courses. 
-The pde files are runnable using the Processing IDE available to be downloaded at https://processing.org/download/.
+Each folder contains individual Processing mini projects that are runnable using the Processing IDE available to be downloaded at https://processing.org/download/.
 # Year 1 Projects
 Projects are simple processing sketches using simple vertex structure and HSB colour schemes.
 The projects are in the "ThePeaceSign" and "TheFourSeasons" folders.
