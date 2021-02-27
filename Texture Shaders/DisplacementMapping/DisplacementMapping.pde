@@ -1,5 +1,5 @@
-//Name    : Wong Dan Ning //<>//
-//UOL SRN : 170282246
+//Name    : Wong Dan Ning 
+//UOL SRN : 17*****46
 //Part B, extended from Part A.
 /*
  BEFORE YOU START:
